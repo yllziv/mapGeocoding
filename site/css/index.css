@@ -1,0 +1,44 @@
+@font-face {
+  font-family: OstrichHeavy;
+  src: url(../fonts/OstrichSans-Heavy.otf); }
+
+.pagehead {
+  width: 100%;
+  height: auto;
+  background-color: #3bb1cf;
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
+  font-family: OstrichHeavy; }
+
+.headimg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px; }
+
+.searchloaction {
+  padding-top: 25px; }
+
+.buttonText {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+#inputtext {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 40px; }
+
+#inputtextarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.bodycontent {
+  width: 100%; }
+
+#list {
+  width: 20%;
+  height: 1px;
+  float: left; }
+
+#allmap {
+  width: 80%;
+  height: 1px;
+  float: left; }
