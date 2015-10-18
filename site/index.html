@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>GeoCoding Tool</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HL35e1E12vh3KsAYwq2ijmtV"></script>
 <div class="pagehead row">
     <div class="col-xs-5">
@@ -15,16 +16,46 @@
         <span class="headText">Geocoding Tool</span>
     </div>
     <div class="searchloaction col-xs-7">
-        <div class="input-group">
-            <span class="input-group-addon btn" id="changeline">
-                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-            </span>
-            <input id="inputtext" type="text" class="form-control" placeholder="Search for...">
-            <textarea id="inputtextarea" class="form-control" rows="2" placeholder="Search for..."></textarea>
-            <span class="input-group-addon btn btn-default">搜索
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            </span>
+        <div id="myTabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                          data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                           data-toggle="tab">Multipoint</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="input-group">
+                        <input id="inputtext" type="text" class="form-control" placeholder="Search for...">
+                        <span id="onesearch" class="input-group-addon btn btn-default">搜索
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                         </span>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="input-group">
+                        <!--<input id="inputtextarea" type="text" class="form-control" placeholder="Search for">-->
+                        <input id="inputtextarea" type="text" class="form-control" placeholder="Search for.">
+                        <span id="muitisearch" class="input-group-addon btn btn-default ">搜索
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!--<div class="input-group">-->
+        <!--<span class="input-group-addon btn" id="changeline">-->
+        <!--<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>-->
+        <!--</span>-->
+        <!--<input id="inputtext" type="text" class="form-control" placeholder="Search for...">-->
+        <!--<textarea id="inputtextarea" class="form-control" rows="2" placeholder="Search for..."></textarea>-->
+        <!--<span id="searchAddr" class="input-group-addon btn btn-default">搜索-->
+        <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+        <!--</span>-->
+        <!--</div>-->
     </div>
 </div>
 <div class="row bodycontent">
