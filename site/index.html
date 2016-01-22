@@ -9,6 +9,7 @@
 <body>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/bootstrap.min.js"></script>
+<!--<script src="js/lib/bootstrap3-typeahead.js"></script>-->
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HL35e1E12vh3KsAYwq2ijmtV"></script>
 <div class="pagehead row">
     <div class="col-xs-5">
@@ -23,6 +24,8 @@
                                                           data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
                                            data-toggle="tab">Multipoint</a></li>
+                <li role="presentation"><a href="#search" aria-controls="search" role="tab"
+                                           data-toggle="tab">Search</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
@@ -43,26 +46,31 @@
                         </span>
                     </div>
                 </div>
+                <div role="tabpanel" class="tab-pane" id="search">
+                    <div class="input-group">
+                        <input id="sarchtext" type="text" class="form-control" placeholder="Search for...">
+                        <span id="searchbutton" class="input-group-addon btn btn-default">搜索
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                         </span>
+                    </div>
+                </div>
             </div>
 
         </div>
-        <!--<div class="input-group">-->
-        <!--<span class="input-group-addon btn" id="changeline">-->
-        <!--<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>-->
-        <!--</span>-->
-        <!--<input id="inputtext" type="text" class="form-control" placeholder="Search for...">-->
-        <!--<textarea id="inputtextarea" class="form-control" rows="2" placeholder="Search for..."></textarea>-->
-        <!--<span id="searchAddr" class="input-group-addon btn btn-default">搜索-->
-        <!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
-        <!--</span>-->
-        <!--</div>-->
     </div>
 </div>
-<div class="row bodycontent">
-    <div id="list"></div>
+<div class="bodycontent">
+    <div id="list">
+
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" class="active"><a href="#">武汉大学</a></li>
+            <li role="presentation"><a href="#">武汉理工大学</a></li>
+            <li role="presentation"><a href="#">武汉工业大学</a></li>
+        </ul>
+    </div>
     <div id="allmap"></div>
 </div>
-
 <script src="js/main.js"></script>
+
 </body>
 </html>

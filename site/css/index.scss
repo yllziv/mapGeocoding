@@ -2,7 +2,11 @@
   font-family: OstrichHeavy;
   src:url(../fonts/OstrichSans-Heavy.otf);
 }
-
+body{
+  width:100%;
+  overflow:hidden;
+  overflow-y:hidden// ²»Ìí¼ÓÒ³Ãæ»áÊÕµ½¹ö¶¯ÌõµÄ¿í¶ÈÓ°Ïì
+}
 .pagehead{
   width:100%;
   height: auto;
@@ -12,7 +16,10 @@
   color:white;
   font-family: OstrichHeavy;
 }
-
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .headimg {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -31,37 +38,32 @@
   font-size: 14px;
 }
 
-#inputtext{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 40px;
-}
-
-#inputtextarea{
+#inputtext #inputtextarea #searchtext{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 40px;
 }
 
 .bodycontent{
-  padding-top: 5px;
+  padding-top: 3px;
   width:100%;
 }
 #list{
-  width:2%;
+  margin-right: 0px;
+  width:213px;
   height:1px;
   float:left;
+  background-color: #eeecb7;
+  border-right-style: solid;
+  border-right-color: #757575;
+  border-right-width: 1px;
 }
 
 #allmap{
-  width: 98%;
+  width: 200px;
   height: 1px;
   float:left;
-
 }
 
-.tabul{
-  li{
-    a{
-      padding-bottom: 0px;
-    }
-  }
+.typeahead{
+  font-family: Arial;
 }
